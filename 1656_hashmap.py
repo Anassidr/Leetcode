@@ -4,7 +4,6 @@ class OrderedStream:
 
     def __init__(self, n: int):
         self.map = {}
-        self.n = n
         self.i = 1
         
 
