@@ -7,7 +7,7 @@ class OrderedStream:
         self.i = 1
         
 
-    def insert(self, idKey: int, value: str) -> List[str]:
+    def insert(self, idKey: int, value: str) -> list[str]:
         self.map[idKey] = value
         chunk = []
         while self.i in self.map:
