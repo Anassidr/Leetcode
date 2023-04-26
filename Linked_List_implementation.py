@@ -12,8 +12,7 @@ class LinkedList:
         if node:
             self.count += 1
             return self.countNodes(node.next)
-        else:
-            return self.count
+        return self.count
 
 node_a = Node(5)
 node_b = Node(3)
