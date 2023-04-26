@@ -21,4 +21,6 @@ node_a.next = node_b
 mylist = LinkedList()
 mylist.head = node_a 
 
-print(mylist.countNodes(node_a))
+# print(mylist.countNodes(node_a))
+
+print(int("101", 2))
