@@ -10,7 +10,7 @@ class Solution:
     def __init__(self):
         self.amap = {}
         self.bmap = {}
-    def getIntersectionNode(self, headA: ListNode, headB: ListNode) -> Optional[ListNode]:
+    def getIntersectionNode(self, headA: ListNode, headB: ListNode) -> ListNode:
         while headA or headB:
             if headA in self.bmap or headA==headB:
                 return headA
