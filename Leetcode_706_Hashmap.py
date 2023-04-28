@@ -1,3 +1,5 @@
+# Implementing a hashmap and using Linked Lists to handle collisions
+
 class ListNode:
     def __init__(self, key, val):
         self.key = key
