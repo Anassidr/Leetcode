@@ -4,6 +4,8 @@ def quicksort(arr):
 def qs(arr, l, r):
     if l >= r:
         return 
+    # We are choosing the last element as the pivot
+    # There are other strategies for choosing the pivot, such as picking a random element or the "median of three"
     p = partition(arr,l ,r)
     qs(arr, l, p-1)
     qs(arr, p+1, r)

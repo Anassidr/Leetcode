@@ -1,0 +1,13 @@
+# Recursive Depth first search
+
+class Solution(object):
+    def floodFill(self, image, sr, sc, newColor):
+        rows, cols, cur_color = len(image), len(image[0]), image[sr][sc]
+        def traverse(row, col):
+            if (not (0 <= row < rows and 0 <= col < cols)) or image[row][col] != cur_color:
+                return
+            image[row][col] = newColor
+            [traverse(row + x, col + y) for (x, y) in ((0, 1), (1, 0), (0, -1), (-1,0))]
+        if cur_color != newColor:
+            traverse(sr, sc)
+        return image
