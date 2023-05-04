@@ -7,7 +7,7 @@ class Solution(object):
             if (not (0 <= row < rows and 0 <= col < cols)) or image[row][col] != cur_color:
                 return
             image[row][col] = newColor
-            [traverse(row + x, col + y) for (x, y) in ((0, 1), (1, 0), (0, -1), (-1,0))]
+            [traverse(row + x, col + y) for (x, y) in ((0, 1), (1, 0), (0, -1), (-1, 0))]
         if cur_color != newColor:
             traverse(sr, sc)
         return image
