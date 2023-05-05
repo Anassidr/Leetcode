@@ -5,16 +5,19 @@ def isBadVersion():
     return
 
 # using binary search 
+# time complexity O(log n)
+# space complexity O(1)
+
 
 class Solution:
     def firstBadVersion(self, n: int) -> int:
         low = 0
         high = n-1 
         while low <= high:
-            middle = (low+high)//2
-            if isBadVersion(middle) == False and isBadVersion(middle+1) == True:
-                return middle+1
-            elif isBadVersion(middle) == False:
+            #  avoid integer overflow 
+            middle = low +(high-low)//2
+            if not isBadVersion(middle):
                 low = middle + 1 
-            elif isBadVersion(middle) == True:
-                high = middle
+            else:
+                high = middle - 1
+        return low
