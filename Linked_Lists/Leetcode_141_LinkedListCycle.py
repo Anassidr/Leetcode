@@ -32,3 +32,11 @@ class Solution:
             if slow == fast:
                 return True
         return False
+
+
+testt = []
+
+testt.append(1)
+
+testt.pop()
+print(testt)
