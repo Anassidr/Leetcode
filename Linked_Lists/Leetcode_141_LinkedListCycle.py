@@ -38,5 +38,7 @@ testt = []
 
 testt.append(1)
 
-testt.pop()
+testt.push(2)
+
+
 print(testt)

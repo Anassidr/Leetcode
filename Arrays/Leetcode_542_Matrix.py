@@ -1,3 +1,7 @@
+# by usine a queue, we visit the 0 cells, then the 1 cells, 2 cells etc in order
+# this way we always get the shorted path from 0
+
+
 import collections as c
 class Solution:
     def updateMatrix(self, matrix):
